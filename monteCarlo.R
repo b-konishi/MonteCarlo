@@ -16,10 +16,8 @@ repeat {
     incorrect <- incorrect + 1
   }
   cat('\n### Probability ###\n')
-  cat('correct: ')
-  print(correct)
-  cat('incorrect: ')
-  print(incorrect)
+  cat(paste('correct: ', correct, '\n'))
+  cat(paste('incorrect: ', incorrect, '\n'))
   p <- 4 * correct/(correct+incorrect)
   print(p)
 
